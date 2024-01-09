@@ -1,0 +1,26 @@
+---
+const EXPERIENCIE = [
+    {
+        date: 'AUG 2023 - NOV 2023',
+        title: 'Programador Jr. React',
+        description: 'Implementar y mantener componentes reutilizables para facilitar la consistencia a lo largo de la aplicación. Colaborar en el diseño y desarrollo de interfaces de usuario atractivas y funcionales utilizando React.js.'
+    },
+    {
+        date: 'DEC 2022 - JUL 2023',
+        title: 'Soporte Técnico',
+        description: 'Proporcionar soluciones efectivas y realizar reparaciones para garantizar el funcionamiento adecuado. Identificar y diagnosticar problemas de hardware y software en PCs.'
+    },
+]
+import ExperienceItem from "./ExperienceItem.astro";
+---
+
+<ol class="relative border-s border-gray-200 ml-3"> 
+    {
+        EXPERIENCIE.map((experiencie) => (
+            <li class="mb-10 ms-4">
+                <ExperienceItem {...experiencie}/>
+            </li>
+        ))
+    }                 
+</ol>
+

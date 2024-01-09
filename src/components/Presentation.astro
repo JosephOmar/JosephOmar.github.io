@@ -1,0 +1,40 @@
+---
+import SocialPill from "./SocialPill.astro";
+import LinkedInIcon from "./icons/LinkedInIcon.astro";
+import GitHubIcon from "./icons/GitHubIcon.astro";
+import MailIcon from "./icons/MailIcon.astro";
+import Badge from "./Badge.astro";
+---
+<img 
+    class="rounded-full size-12"
+    src="/perfil.png" 
+    alt="joseph photo"/>
+<h1 class="text-white text-2xl md:text-4xl lg:text-5xl font-bold flex justify-start flex-row gap-x-4 pb-6 lg:pb-10">
+    Soy Joseph 
+        <a 
+            class="flex justify-center items-center"
+            href = "https://www.linkedin.com/in/joseph-omar-meza-torres-948809168/"
+            rel = "noopener"
+            target="_blank"
+        >
+            <Badge>Disponible para contratar</Badge>
+        </a>
+</h1>
+<h2 class="text-xl lg:text-2xl opacity-80 text-wrap max-w-[700px]">
+    Desarrollador web de Lima, Perú. Mi objetivo es contribuir al éxito de los proyectos mediante la aplicación de mis habilidades técnicas y mi capacidad para ofrecer soluciones efectivas. 
+</h2>
+
+<nav class="flex gap-x-4 mt-8 flex-wrap">
+    <SocialPill href="https://www.linkedin.com/in/joseph-omar-meza-torres-948809168/">
+        <LinkedInIcon class="size-4 md:size-6"/>
+        LinkedIn
+    </SocialPill>
+    <SocialPill href="https://github.com/JosephOmar">
+        <GitHubIcon class="size-4 md:size-6"/>
+        GitHub
+    </SocialPill>
+    <SocialPill href="https://mail.google.com/mail/?view=cm&fs=1&to=joseph.meza@gmail.com&su=Asunto%20del%20correo&body=Cuerpo%20del%20correo">
+        <MailIcon class="size-4 md:size-6"/>
+        Joseph.Meza@unmsm.edu.pe
+    </SocialPill>
+</nav>
